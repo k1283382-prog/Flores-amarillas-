@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pour une amie spéciale 🌻</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Georgia,serif}
+body{background:radial-gradient(circle at 50% 35%,#fff7a8,#f5c928 38%,#744000 100%);color:#fff}
+.scene{position:relative;width:100%;height:100%;overflow:hidden}
+.glow{position:absolute;width:75vmax;height:75vmax;left:50%;top:42%;transform:translate(-50%,-50%);
+border-radius:50%;background:rgba(255,240,100,.25);filter:blur(28px)}
+.message{position:absolute;z-index:10;top:10%;left:50%;transform:translateX(-50%);width:min(90%,520px);
+text-align:center;padding:25px 20px;border-radius:30px;background:rgba(70,38,0,.28);
+backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.4);box-shadow:0 12px 40px rgba(0,0,0,.28)}
+h1{margin:0 0 12px;font-size:clamp(29px,8vw,50px);text-shadow:0 3px 12px #573000}
+h2{font-size:clamp(20px,5vw,28px);margin:4px 0 13px;color:#fff5a0}
+p{margin:8px 0;font-size:clamp(17px,4.4vw,22px);line-height:1.45}
+.fr{font-style:italic}
+button{margin-top:17px;border:0;border-radius:999px;padding:13px 23px;font-size:16px;font-weight:bold;
+color:#6b3a00;background:#ffe66d;box-shadow:0 5px 18px rgba(0,0,0,.3);cursor:pointer}
+.signature{margin-top:12px;font-size:14px;opacity:.9}
+.flower{position:absolute;z-index:5;width:72px;height:72px;animation:sway 3s ease-in-out infinite alternate}
+.center{position:absolute;left:50%;top:50%;width:25px;height:25px;transform:translate(-50%,-50%);
+border-radius:50%;background:#633500;box-shadow:0 0 0 7px #d99000}
+.petal{position:absolute;left:50%;top:50%;width:30px;height:42px;margin:-21px 0 0 -15px;
+background:#ffd92f;border-radius:50% 50% 45% 45%;transform-origin:50% 50%;box-shadow:0 2px 7px rgba(80,45,0,.25)}
+.p1{transform:rotate(0deg) translateY(-25px)}.p2{transform:rotate(45deg) translateY(-25px)}
+.p3{transform:rotate(90deg) translateY(-25px)}.p4{transform:rotate(135deg) translateY(-25px)}
+.p5{transform:rotate(180deg) translateY(-25px)}.p6{transform:rotate(225deg) translateY(-25px)}
+.p7{transform:rotate(270deg) translateY(-25px)}.p8{transform:rotate(315deg) translateY(-25px)}
+.f1{left:5%;top:66%;transform:scale(.8)}.f2{left:72%;top:68%;transform:scale(.95);animation-delay:.8s}
+.f3{left:38%;top:80%;transform:scale(.7);animation-delay:1.2s}.f4{left:83%;top:42%;transform:scale(.6)}
+.f5{left:12%;top:43%;transform:scale(.65);animation-delay:1.5s}.f6{left:53%;top:59%;transform:scale(.55)}
+.petalFall{position:absolute;top:-40px;width:15px;height:24px;border-radius:80% 20% 80% 20%;
+background:#ffd92f;opacity:.85;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(115vh) rotate(420deg)}}
+@keyframes sway{from{margin-top:-5px}to{margin-top:7px}}
+</style>
+</head>
+<body>
+<div class="scene">
+<div class="glow"></div>
+
+<div class="message">
+<h1>🌻 Pour toi 🌻</h1>
+<h2>Une petite pensée pour une amie spéciale</h2>
+<p class="fr">« Que ta vie soit toujours remplie de soleil, de sourires et de beaux moments. »</p>
+<p>💛 Parce qu'une belle amitié mérite aussi des fleurs.</p>
+<button id="btn" onclick="startMusic()">🎵 Appuie ici</button><audio id="music" src="lover_is_a_day.mp3" preload="auto"></audio>
+<div class="signature">Avec toute mon amitié ✨</div>
+</div>
+
+<div class="flower f1"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+<div class="flower f2"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+<div class="flower f3"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+<div class="flower f4"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+<div class="flower f5"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+<div class="flower f6"><i class="petal p1"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i><i class="petal p5"></i><i class="petal p6"></i><i class="petal p7"></i><i class="petal p8"></i><i class="center"></i></div>
+</div>
+
+<script>
+for(let i=0;i<38;i++){ const p=document.createElement('span');p.className='petalFall';p.style.left=Math.random()*100+'%';p.style.animationDuration=(5+Math.random()*7)+'s';p.style.animationDelay=(-Math.random()*10)+'s';document.querySelector('.scene').appendChild(p);}
+function startMusic(){ const m=document.getElementById('music'); m.volume=.65; m.play(); document.getElementById('btn').textContent='🎵 Música sonando 💛'; document.querySelector('.fr').textContent='« Une amie comme toi est un petit rayon de soleil dans la vie. »';}
+</script>
+</body>
+</html>
